@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body onload="init()">
+    <!--The Grid.-->
+    <table>
+      <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th></tr>
+      <tr><th>1</th><td class="gridcell" id="A1"></td><td class="gridcell" id="B1"></td><td class="gridcell" id="C1"></td><td class="gridcell" id="D1"></td><td class="gridcell" id="E1"></td><td class="gridcell" id="F1"></td><td class="gridcell" id="G1"></td><td class="gridcell" id="H1"></td><td class="gridcell" id="I1"></td><td class="gridcell" id="J1"></td><td class="gridcell" id="K1"></td><td class="gridcell" id="L1"></td><td class="gridcell" id="M1"></td></tr>
+      <tr><th>2</th><td class="gridcell" id="A2"></td><td class="gridcell" id="B2"></td><td class="gridcell" id="C2"></td><td class="gridcell" id="D2"></td><td class="gridcell" id="E2"></td><td class="gridcell" id="F2"></td><td class="gridcell" id="G2"></td><td class="gridcell" id="H2"></td><td class="gridcell" id="I2"></td><td class="gridcell" id="J2"></td><td class="gridcell" id="K2"></td><td class="gridcell" id="L2"></td><td class="gridcell" id="M2"></td></tr>
+      <tr><th>3</th><td class="gridcell" id="A3"></td><td class="gridcell" id="B3"></td><td class="gridcell" id="C3"></td><td class="gridcell" id="D3"></td><td class="gridcell" id="E3"></td><td class="gridcell" id="F3"></td><td class="gridcell" id="G3"></td><td class="gridcell" id="H3"></td><td class="gridcell" id="I3"></td><td class="gridcell" id="J3"></td><td class="gridcell" id="K3"></td><td class="gridcell" id="L3"></td><td class="gridcell" id="M3"></td></tr>
+      <tr><th>4</th><td class="gridcell" id="A4"></td><td class="gridcell" id="B4"></td><td class="gridcell" id="C4"></td><td class="gridcell" id="D4"></td><td class="gridcell" id="E4"></td><td class="gridcell" id="F4"></td><td class="gridcell" id="G4"></td><td class="gridcell" id="H4"></td><td class="gridcell" id="I4"></td><td class="gridcell" id="J4"></td><td class="gridcell" id="K4"></td><td class="gridcell" id="L4"></td><td class="gridcell" id="M4"></td></tr>
+      <tr><th>5</th><td class="gridcell" id="A5"></td><td class="gridcell" id="B5"></td><td class="gridcell" id="C5"></td><td class="gridcell" id="D5"></td><td class="gridcell" id="E5"></td><td class="gridcell" id="F5"></td><td class="gridcell" id="G5"></td><td class="gridcell" id="H5"></td><td class="gridcell" id="I5"></td><td class="gridcell" id="J5"></td><td class="gridcell" id="K5"></td><td class="gridcell" id="L5"></td><td class="gridcell" id="M5"></td></tr>
+      <tr><th>6</th><td class="gridcell" id="A6"></td><td class="gridcell" id="B6"></td><td class="gridcell" id="C6"></td><td class="gridcell" id="D6"></td><td class="gridcell" id="E6"></td><td class="gridcell" id="F6"></td><td class="gridcell" id="G6"></td><td class="gridcell" id="H6"></td><td class="gridcell" id="I6"></td><td class="gridcell" id="J6"></td><td class="gridcell" id="K6"></td><td class="gridcell" id="L6"></td><td class="gridcell" id="M6"></td></tr>
+      <tr><th>7</th><td class="gridcell" id="A7"></td><td class="gridcell" id="B7"></td><td class="gridcell" id="C7"></td><td class="gridcell" id="D7"></td><td class="gridcell" id="E7"></td><td class="gridcell" id="F7"></td><td class="gridcell" id="G7"></td><td class="gridcell" id="H7"></td><td class="gridcell" id="I7"></td><td class="gridcell" id="J7"></td><td class="gridcell" id="K7"></td><td class="gridcell" id="L7"></td><td class="gridcell" id="M7"></td></tr>
+      <tr><th>8</th><td class="gridcell" id="A8"></td><td class="gridcell" id="B8"></td><td class="gridcell" id="C8"></td><td class="gridcell" id="D8"></td><td class="gridcell" id="E8"></td><td class="gridcell" id="F8"></td><td class="gridcell" id="G8"></td><td class="gridcell" id="H8"></td><td class="gridcell" id="I8"></td><td class="gridcell" id="J8"></td><td class="gridcell" id="K8"></td><td class="gridcell" id="L8"></td><td class="gridcell" id="M8"></td></tr>
+      <tr><th>9</th><td class="gridcell" id="A9"></td><td class="gridcell" id="B9"></td><td class="gridcell" id="C9"></td><td class="gridcell" id="D9"></td><td class="gridcell" id="E9"></td><td class="gridcell" id="F9"></td><td class="gridcell" id="G9"></td><td class="gridcell" id="H9"></td><td class="gridcell" id="I9"></td><td class="gridcell" id="J9"></td><td class="gridcell" id="K9"></td><td class="gridcell" id="L9"></td><td class="gridcell" id="M9"></td></tr>
+      <tr><th>10</th><td class="gridcell" id="A10"></td><td class="gridcell" id="B10"></td><td class="gridcell" id="C10"></td><td class="gridcell" id="D10"></td><td class="gridcell" id="E10"></td><td class="gridcell" id="F10"></td><td class="gridcell" id="G10"></td><td class="gridcell" id="H10"></td><td class="gridcell" id="I10"></td><td class="gridcell" id="J10"></td><td class="gridcell" id="K10"></td><td class="gridcell" id="L10"></td><td class="gridcell" id="M10"></td></tr>
+      <tr><th>11</th><td class="gridcell" id="A11"></td><td class="gridcell" id="B11"></td><td class="gridcell" id="C11"></td><td class="gridcell" id="D11"></td><td class="gridcell" id="E11"></td><td class="gridcell" id="F11"></td><td class="gridcell" id="G11"></td><td class="gridcell" id="H11"></td><td class="gridcell" id="I11"></td><td class="gridcell" id="J11"></td><td class="gridcell" id="K11"></td><td class="gridcell" id="L11"></td><td class="gridcell" id="M11"></td></tr>
+      <tr><th>12</th><td class="gridcell" id="A12"></td><td class="gridcell" id="B12"></td><td class="gridcell" id="C12"></td><td class="gridcell" id="D12"></td><td class="gridcell" id="E12"></td><td class="gridcell" id="F12"></td><td class="gridcell" id="G12"></td><td class="gridcell" id="H12"></td><td class="gridcell" id="I12"></td><td class="gridcell" id="J12"></td><td class="gridcell" id="K12"></td><td class="gridcell" id="L12"></td><td class="gridcell" id="M12"></td></tr>
+      <tr><th>13</th><td class="gridcell" id="A13"></td><td class="gridcell" id="B13"></td><td class="gridcell" id="C13"></td><td class="gridcell" id="D13"></td><td class="gridcell" id="E13"></td><td class="gridcell" id="F13"></td><td class="gridcell" id="G13"></td><td class="gridcell" id="H13"></td><td class="gridcell" id="I13"></td><td class="gridcell" id="J13"></td><td class="gridcell" id="K13"></td><td class="gridcell" id="L13"></td><td class="gridcell" id="M13"></td></tr>
+    </table>
+
+    <!--Bomb count and controls-->
+    <!--<div>
+      <h5>Bombs remaining</h5>
+      <p id="bomb-count"></p>
+    </div>
+    -->
+    <!--TODO-->
+
+    <!-- Player control area-->
+    <!--TODO-->
+
+    <!--List of members + kill/revive-->
+    <div>
+      <h5>Members:</h5>
+      <ul id="members-list"></ul>
+    </div>
+
+    <!--Add Player-->
+    <div id="new-player-area">
+      <form name="new-player-form" action="javascript:void(0);">
+        <fieldset>
+          <legend>Add Player</legend>
+          <label for="player-name">Name: </label>
+          <input id="new-player-name" type="text" name="player-name" />
+          <label for="player-coords">Coordinates: </label>
+          <input id="new-player-coords" type="text" name="player-coords" />
+          <label for="player-patrol">Patrol: </label>
+          <input id="new-player-patrol" type="text" name="player-patrol" />
+          <button type="submit" onclick="newPlayer();">Add player</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!--Input config string-->
+    <div id="read-string-area">
+      <form name="read-string-form" action="javascript:void(0);">
+        <fieldset>
+          <legend>Set String</legend>
+          <label for="fox-string">Fox: </label>
+          <input id="input-string-fox" type="text" name="fox-string" />
+          <label for="bull-string">Bull: </label>
+          <input id="input-string-bull" type="text" name="bull-string" />
+          <label for="hound-string">Hound: </label>
+          <input id="input-string-hound" type="text" name="hound-string" />
+          <label for="eagle-string">Eagle: </label>
+          <input id="input-string-eagle" type="text" name="eagle-string" />
+          <button type="submit" onclick="setString();">Set</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!--Generate config string-->
+    <div id="gen-string-area">
+      <form name="gen-string-form" action="javascript:void(0);">
+        <fieldset>
+          <legend>Generate string</legend>
+          <label for="string-fox">Fox: </label>
+          <input id="generated-string-fox" type="text" name="string-fox" />
+          <label for="string-bull">Bull: </label>
+          <input id="generated-string-bull" type="text" name="string-bull" />
+          <label for="string-hound">Hound: </label>
+          <input id="generated-string-hound" type="text" name="string-hound" />
+          <label for="string-eagle">Eagle: </label>
+          <input id="generated-string-eagle" type="text" name="string-eagle" />
+          <button type="submit" onclick="generateString();">Generate</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
