@@ -1,0 +1,52 @@
+* {
+  font-size: 12px;
+}
+td {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+td {
+  background-color: skyblue;
+}
+.blank-space {
+  background-color: transparent;
+  pointer-events: none;
+  height: 10px;
+}
+.accessible-cell {
+  background-color: green;
+}
+.fox-member, .fox-base {
+  background: linear-gradient(to right, yellow 50%, yellowgreen 50%);
+  color: black;
+  text-align: center;
+}
+.bull-member, .bull-base{
+  background: red;
+  color: white;
+  text-align: center;
+}
+.hound-member, .hound-base {
+  background: orange;
+  color: black;
+  text-align: center;
+}
+.eagle-member, .eagle-base{
+  background: linear-gradient(to right, darkgreen 50%, black 50%);
+  color: white;
+  text-align: center;
+}
+.hospital {
+  background-color: pink;
+}
+
+.legal-move {
+  background-color: cyan;
+}
+
+.selected-member {
+  background: white;
+  color: black;
+}
+
